@@ -5,6 +5,12 @@ plugins {
     id 'war'
 }
 
+apply plugin: 'war'
+
+bootWar {
+    archiveName("main.war")
+}
+
 group = 'com.taetaetae.helloworld'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
